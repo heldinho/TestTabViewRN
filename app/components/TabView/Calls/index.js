@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 
 export default function Calls() {
-  const [count, setCount] = React.useState(1);
+  const [count, setCount] = React.useState(0);
 
   const fnPress = () => {
     setCount(prev => prev + 1);
@@ -32,7 +32,7 @@ export default function Calls() {
             }}
           >
             <Text style={{ color: '#444', fontSize: 18, textAlign: 'center' }}>
-              Teste de TouchableOpacity
+              Button Add Count++
             </Text>
           </View>
         </TouchableWithoutFeedback>
