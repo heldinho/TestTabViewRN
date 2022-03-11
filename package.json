@@ -3,15 +3,28 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "rrm": "rm -rf node_modules android/build android/app/build yarn.lock package-lock.json",
+    "start": "react-native start",
+    "start:reset": "react-native start --reset-cache",
+    "and": "react-native run-android",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start",
+    "reset": "rm -rf node_modules/ && npm cache clear --force && yarn && yarn clean",
+    "reset-ios": "rm -rf node_modules/ && npm cache clear --force && watchman watch-del-all && yarn",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prettier": "prettier --write .",
+    "postinstall": "jetifier -r",
+    "apk": "cd android/ && ./gradlew assembleRelease",
+    "aab": "cd android/ && ./gradlew bundleRelease",
+    "release": "react-native run-android --variant release",
+    "clean": "cd android/ && ./gradlew clean"
   },
   "dependencies": {
     "react": "17.0.2",
     "react-native": "0.67.3",
+    "react-native-camera": "^4.2.1",
+    "react-native-document-scanner": "^1.4.2",
     "react-native-pager-view": "^5.4.11",
     "react-native-tab-view": "^3.1.1"
   },

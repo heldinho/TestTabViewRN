@@ -2,9 +2,9 @@ import styles from './styles';
 import React from 'react';
 import { useWindowDimensions } from 'react-native';
 import { TabView, SceneMap } from 'react-native-tab-view';
-import Talk from '../../components/TabView/Talk';
-import Calls from '../../components/TabView/Calls';
-import Status from '../../components/TabView/Status';
+import Talk from './Tabs/Talk';
+import Calls from './Tabs/Calls';
+import Status from './Tabs/Status';
 
 const renderScene = SceneMap({
   1: Talk,

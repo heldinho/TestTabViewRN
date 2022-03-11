@@ -14,6 +14,10 @@ target 'app' do
 
   pod 'react-native-pager-view', :path => '../node_modules/react-native-pager-view'
 
+  pod 'RNPdfScanner', :path => '../node_modules/react-native-document-scanner'
+
+  pod 'react-native-camera', :path => '../node_modules/react-native-camera'
+
   target 'appTests' do
     inherit! :complete
     # Pods for testing
