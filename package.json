@@ -23,10 +23,9 @@
   "dependencies": {
     "react": "17.0.2",
     "react-native": "0.67.3",
-    "react-native-camera": "^4.2.1",
-    "react-native-document-scanner": "^1.4.2",
     "react-native-pager-view": "^5.4.11",
-    "react-native-tab-view": "^3.1.1"
+    "react-native-tab-view": "^3.1.1",
+    "realm": "^10.13.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
