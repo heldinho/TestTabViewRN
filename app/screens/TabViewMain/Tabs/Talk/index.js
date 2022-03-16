@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
+import { translate } from '../../../../locales';
 import styles from './styles';
 
 // const data = [
@@ -59,6 +60,7 @@ export default function Talk() {
             <View style={{ marginTop: 5 }}>
               <Text style={{ color: '#000', fontSize: 18 }}>{item.name}</Text>
               <Text style={{ color: '#777' }}>{item.email}</Text>
+              <Text>{translate('resume')}</Text>
             </View>
           </View>
           <View style={{ marginTop: 5 }}>
